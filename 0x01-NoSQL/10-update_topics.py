@@ -8,5 +8,6 @@ def update_topics(mongo_collection, name, topics):
     """
     Changes all topics of a school
     """
-    cursor = mongo_collection.update_many({"name": name}, {"$set": {"topics": topics}})
+    cursor = mongo_collection.update_many({"name": name},
+                                          {"$set": {"topics": topics}})
     return cursor
