@@ -1,0 +1,2 @@
+// update attribute to a document
+db.school.deleteMany({ name: "Holberton school" })
