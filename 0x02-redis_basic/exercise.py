@@ -28,6 +28,7 @@ def call_history(method: Callable) -> Callable:
 
     return wrapper
 
+
 def count_calls(method: Callable) -> Callable:
     '''
         Counts the number of times a method is called.
@@ -67,6 +68,7 @@ class Cache:
     '''
         Cache class.
     '''
+
     def __init__(self):
         '''
             Initialize the cache.
@@ -111,4 +113,3 @@ class Cache:
         except Exception:
             value = 0
         return value
-
